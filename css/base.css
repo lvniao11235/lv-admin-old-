@@ -60,7 +60,7 @@ span{
 	margin-left:-170px;
 	width:200px;
 	border:1px solid #C1C0C5;
-	z-index:1;
+	z-index:5;
 	margin-top:15px;
 	background-color:#FEFEFE;
 	
@@ -127,7 +127,7 @@ span{
 .lv-content{
 	position:relative;
 	float:left;
-	z-index:5;
+	z-index:1;
 }
 
 .lv-content-container{
@@ -282,54 +282,5 @@ span{
 
 
 
-.lv-submenu-item{
-	display:none;
-}
 
-.lv-menu-item{
-	width:calc(100% - 3px);
-	text-align:left;
-	background-color:#1A2226;
-	border-left:3px solid #1A2226;
-}
 
-.lv-menu-item:hover, .lv-menu-item.lv-selected{
-	border-color:#3C8DBC;
-}
-.lv-menu-item > .lv-menu-title{
-	padding-left:10px;
-}
-
-.lv-menu-item > .lv-menu-title span{
-	font-size:25px !important;
-	height:35px;
-	line-height:35px;
-	vertical-align:middle;
-}
-
-.lv-menu-item.lv-selected > .lv-submenu-item, .lv-menu-item:hover > .lv-submenu-item{
-	display:block;
-}
-
-.lv-submenu-item{
-	text-align:left;
-	padding-left:10px;
-	width:calc(100% - 10px);
-	background-color:#2C3B41;
-}
-
-.lv-submenu-item > li > .lv-menu-title{
-	padding-left:10px;
-}
-
-.lv-submenu-item > li > .lv-menu-title span{
-	font-size:20px !important;
-	height:30px;
-	line-height:30px;
-	vertical-align:middle;
-}
-
-.lv-submenu-item > li > .lv-menu-title span.fa{
-	float:right;
-	margin-right:10px;
-}
