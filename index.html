@@ -1,0 +1,175 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>lv-admin</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	
+</head>
+<body class="lv-container">
+	<input id="currentskin" type="hidden" value="lv-skin-blue"/>
+	<div class="lv-head">
+		<div class="lv-head-logo lv-dark-skin"><span>LV-ADMIN</div>
+		<div class="lv-head-function lv-skin">
+			<div class="lv-btn lv-btn-fold fa fa-th-list"></div>
+			<div class="lv-head-nav">
+				<div class="lv-btn fa fa-th" title="主题">
+					<div class="lv-panel">
+                        <div class="lv-panel-content">
+							<div class="lv-panel-title"><span>选择皮肤颜色</span></div>
+							<div class="lv-color-item lv-bg-red" title="红色" lv-data="red"></div>
+							<div class="lv-color-item lv-bg-green" title="绿色" lv-data="green"></div>
+							<div class="lv-color-item lv-bg-blue" title="蓝色" lv-data="blue"></div>
+                        </div>
+                    </div>
+				</div>
+				<div class="lv-btn fa fa-info-circle">
+					<div class="lv-panel">
+                        <div class="lv-panel-content">
+                            <span>info</span>
+                        </div>
+                    </div>
+				</div>
+				<div class="lv-btn fa fa-user-circle">
+					<div class="lv-panel">
+                        <div class="lv-panel-content">
+                            <span>user</span>
+                        </div>
+                    </div>
+				</div>
+				<div class="lv-btn fa fa-cog">
+					<div class="lv-panel">
+                        <div class="lv-panel-content">
+                            <span>cog</span>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lv-menu">
+		<div class="lv-menu-container lv-skin">
+			<div class="lv-menu-item lv-selected">
+				<div class="lv-menu-title">
+					<span class="fa fa-cog"></span>
+					<span class="lv-menu-text">系统设置</span>
+				</div>
+				<ul class="lv-submenu-item">
+					<li>
+						<div class="lv-menu-title">
+							<span class="lv-menu-text">menu1</span>
+							<span class="fa fa-angle-down"></span>
+						</div>
+						<ul class="lv-submenu-item">
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu1</span>
+								</div>
+							</li>
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu2</span>
+								</div>
+							</li>
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu3</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="lv-menu-title">
+							<span class="lv-menu-text">menu2</span>
+							<span class="fa fa-angle-down"></span>
+						</div>
+						<ul class="lv-submenu-item">
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu1</span>
+								</div>
+							</li>
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu2</span>
+								</div>
+							</li>
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu3</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="lv-menu-title">
+							<span class="lv-menu-text">menu3</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="lv-menu-item">
+				<div class="lv-menu-title">
+					<span class="fa fa-cog"></span>
+					<span class="lv-menu-text">系统设置</span>
+				</div>
+				<ul class="lv-submenu-item">
+					<li>
+						<div class="lv-menu-title">
+							<span class="lv-menu-text">menu1</span>
+							<span class="fa fa-angle-down"></span>
+						</div>
+						<ul class="lv-submenu-item">
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu1</span>
+									<span class="fa fa-angle-down"></span>
+								</div>
+								<ul class="lv-submenu-item">
+									<li><span>subsubmenu1</span></li>
+									<li><span>subsubmenu2</span></li>
+									<li><span>subsubmenu3</span></li>
+								</ul>
+							</li>
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu2</span>
+								</div>
+							</li>
+							<li>
+								<div class="lv-menu-title">
+									<span class="lv-menu-text">submenu3</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="lv-menu-title">
+							<span class="lv-menu-text">menu2</span>
+						</div>
+					</li>
+					<li>
+						<div class="lv-menu-title">
+							<span class="lv-menu-text">menu3</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="lv-content">
+		<div class="lv-content-container">
+			<span>content</span>
+		</div>
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/base.js"></script>
+	<script>
+		$(function(){
+			lvInit();
+		});
+	</script>
+</body>
+</html>
