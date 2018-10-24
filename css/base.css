@@ -5,7 +5,7 @@
 }
 
 span{
-	font-size:16px !important;
+	font-size:16px;
 }
 
 .f16{ font-size:16px !important; }
@@ -133,6 +133,7 @@ span{
 .lv-content-container{
 	width:100%;
 	height:100%;
+	background-color:gray;
 }
 
 /*框架*/
@@ -270,6 +271,133 @@ span{
 /*响应式布局*/
 
 
+.lv-submenu-item{
+	display:none;
+	background-color:#2C3B41;
+}
+
+.lv-submenu-item > .lv-menu-content > span{
+	font-size:16px !important;
+	height:20px;
+	line-height:20px;
+	vertical-align:middle;
+}
+
+.lv-submenu-item > .lv-menu-content.lv-open > .lv-submenu-item{
+	display:block;
+}
+
+.lv-submenu-item > .lv-menu-content{
+	margin-left:10px;
+}
+
+.lv-menu-item > .lv-menu-content > span {
+	font-size:25px !important;
+	font-weight:bolder;
+	height:35px;
+	line-height:35px;
+	vertical-align:middle;
+}
+
+.lv-menu-item{
+	border-left:3px solid transparent;
+}
+
+.lv-menu-item.lv-selected{
+	border-left:3px solid #3C8DBC;
+}
+.lv-menu-item:hover > .lv-menu-content > .lv-submenu-item,
+.lv-menu-item.lv-selected > .lv-menu-content > .lv-submenu-item{
+	display:block;
+}
+
+.lv-menu-text{
+	margin-left:10px;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content > .lv-menu-text{
+	margin-left:0px;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content{
+	position:relative;
+	left:80px;
+}
+
+.lv-fold .lv-menu-item{
+	height:35px;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content > span{
+	display:inline-block;
+	position:relative;
+	left:-80px;
+	width:77px;
+	text-align:center;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content > .lv-menu-text{
+	display:none;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content:hover{
+	width:230px;
+	position:absolute;
+	z-index:5;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content:hover > .lv-menu-text{
+	display:inline-block;
+	width:150px;
+	background-color:#222D32;
+}
+
+
+.lv-fold .lv-menu-item > .lv-menu-content:hover > .lv-submenu-item{
+	width:147px;
+	display:block;
+}
+
+.lv-fold .lv-submenu-item > .lv-menu-content > .lv-submenu-item{
+	display:none;
+}
+
+.lv-fold .lv-submenu-item > .lv-menu-content:hover > .lv-submenu-item{
+	display:block;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content > .lv-submenu-item:hover > .lv-menu-content{
+	height:20px;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content > .lv-submenu-item:hover > .lv-menu-content > .lv-submenu-item{
+	position:absolute;
+	margin-left:137px;
+	margin-top:-20px;
+	width:147px;
+}
+
+.lv-submenu-item .lv-menu-text.lv-noicon{
+	width:100%;
+	display:inline-block;
+}
+
+.lv-submenu-item fa{
+	width:20px;
+}
+
+.lv-submenu-item .lv-menu-text.lv-hasicon{
+	width:calc(100% - 30px);
+	display:inline-block;
+}
+
+.lv-menu-item > .lv-menu-content > .fa {
+	margin-left:10px;
+}
+
+.lv-fold .lv-menu-item > .lv-menu-content > .fa {
+	margin-left:0px;
+}
 
 
 

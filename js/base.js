@@ -34,6 +34,10 @@ function lvInit(){
 			$(this).addClass("lv-selected");
 		}
 	});
+	
+	$(".lv-menu-item span").click(function(){
+		alert($(this).text());
+	});
 }
 
 //初始化皮肤
