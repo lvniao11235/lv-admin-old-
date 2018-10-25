@@ -38,6 +38,14 @@ function lvInit(){
 	$(".lv-menu-item span").click(function(){
 		alert($(this).text());
 	});
+	
+	$(".lv-menu-item > .lv-menu-content > .lv-submenu-item > .lv-menu-content").mouseenter(function(){
+		$(".lv-menu-item > .lv-menu-content > .lv-submenu-item > .lv-menu-content").removeClass("lv-open");
+		$(this).addClass("lv-open");
+	});
+	$(".lv-menu-item > .lv-menu-content > .lv-submenu-item > .lv-menu-content").mouseleave(function(){
+		$(this).removeClass("lv-open");
+	});
 }
 
 //初始化皮肤

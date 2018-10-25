@@ -399,7 +399,9 @@ span{
 	margin-left:0px;
 }
 
-
+.lv-open > .lv-submenu-item{
+	display:block;
+}
 
 
 
